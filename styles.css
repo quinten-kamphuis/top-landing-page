@@ -3,12 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
-
-    border: 1px solid gray;
 }
 body{
     font-family: Roboto, sans-serif;
-    overflow: hidden;
     justify-content: space-between;
     min-height: 100vh;
 }
@@ -35,8 +32,9 @@ body,
 .icons div{
     flex-direction: column;
 }
-
-
+.column-flex, .quote{
+    padding: 5%;
+}
 header,
 #random-information,
 .icons div,
@@ -46,44 +44,103 @@ header,
 header{
     justify-content: space-between;
 }
+nav{
+    text-wrap: nowrap;
+}
 .hero, footer{
     background-color: #1F2937;
 }
-h1{
-    font-size: 4.8em;
-}
-.hero h1{
-    font-weight: extra-bold;
-}
-h2{
-    font-size: 3.2em;
-}
-p{
-    font-size: 1.8em; 
-}
-
 .hero h1, 
 .hero p,
 footer h1,
 footer p{
     color: #f9faf8;
 }
-
+h1{
+    font-size: 4.8em;
+    margin: 4% 0;
+}
+.hero h1{
+    font-weight: extra-bold;
+}
+h2{
+    font-size: 3.2em;
+    margin: 3% 0;
+}
+h3{
+    font-size: 2.4em;
+    margin: 3% 0;
+}
+p{
+    font-size: 1.8em; 
+    margin: 2% 0;
+}
+a{
+    font-size: 1.8em;
+    margin: 5%;
+    text-decoration: none;
+    color: #1F2937;
+}
+.logo{
+    padding: 1%;
+}
+.button{
+    background-color: #3882F6;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 900;
+    padding: 3%;
+    width: 120px;
+    border-radius: 10px;
+}
+#hero-img{
+    object-fit: cover;
+}
 #random-information{
 
 }
 .icons{
-
+    text-align: center;
 }
 .icons div{
-
+    margin: 2%;
 }
 .icon-img{
     border: 2px solid #9393ff;
     border-radius: 20px;
 }
-.call-to-action{
 
+#quote{
+    background-color: #e5e7eb;
+}
+.quote{
+    font-size: 2.8em;
+    font-weight: 100;
+    font-style: italic;
+    padding: 8%;
+    color: #31353c;
+}
+.quote-author{
+    font-weight: 1000;
+    color: black;
+}
+.quote-author::before{
+    content: '-';
+    text-align: right;
+    font-weight: 1000;
+}
+
+#cta-section{
+    flex-direction: column;
+}
+.call-to-action{
+    margin: 3%;
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: white;
+}
+.call-to-action button{
+    border: 1px solid white;
 }
 
 footer{
